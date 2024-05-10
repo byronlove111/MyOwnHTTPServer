@@ -100,8 +100,6 @@ server.on("connection", (socket) => {
     if (httpParsed.code !== 404) {
       socket.write(body);
     }
-
-    console.log(header, body);
     socket.end(); // Ferme la connexion
   });
 });
